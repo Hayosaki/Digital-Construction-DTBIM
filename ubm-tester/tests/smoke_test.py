@@ -13,7 +13,6 @@ from .utils.api import traverse_files_with_extension, create_application_test, c
 
 @pytest.mark.run(order=1)
 def test_init(test_files_root_path, data):
-    return
     print_long_info("SMOKE TEST START")
     print(f"\nTest Files Root Path: {test_files_root_path}")
 
@@ -27,7 +26,6 @@ def test_init(test_files_root_path, data):
 
 @pytest.mark.run(order=2)
 def test_create_project_and_application(config_model_manager, data):
-    return
     print_long_info("CREATE PROJECT AND APPLICATION TEST START")
     host, port = config_model_manager
     url = f"http://{host}:{port}"
@@ -46,7 +44,6 @@ def test_create_project_and_application(config_model_manager, data):
 
 @pytest.mark.run(order=3)
 def test_upload_models(config_model_manager, data):
-    return
     host, port = config_model_manager
     url = f"http://{host}:{port}"
     project_id = data["project_id"]
@@ -79,7 +76,6 @@ def test_upload_models(config_model_manager, data):
 @pytest.mark.run(order=4)
 @pytest.mark.asyncio
 async def test_convert_models(config_model_manager, data):
-    return
     host, port = config_model_manager
     url = f"http://{host}:{port}"
     project_id = data["project_id"]
@@ -115,16 +111,11 @@ async def test_convert_models(config_model_manager, data):
 @pytest.mark.run(order=5)
 @pytest.mark.asyncio
 async def test_model_get(config_model_manager, data):
-    return
     host, port = config_model_manager
     url = f"http://{host}:{port}"
-    # project_id = data["project_id"]
-    # model_file_ids = data["model_file_ids"]
-    # num = data["model_num"]
-    # uploaded_models = [i for i in range(num)]
-    project_id = 114
-    model_file_ids = [1]
-    num = 1
+    project_id = data["project_id"]
+    model_file_ids = data["model_file_ids"]
+    num = data["model_num"]
     uploaded_models = [i for i in range(num)]
 
     print_long_info("GET MODEL TEST START")
