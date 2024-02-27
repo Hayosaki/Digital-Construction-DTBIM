@@ -1,0 +1,24 @@
+{
+  "materialAttributeCases": {
+    "materialAttributeForCreate": {
+      "materialAttribute1": "属性材质用例1",
+      "materialAttribute2": "属性材质用例2",
+      "materialAttribute3": "属性材质用例3"
+    },
+    "materialAttributeForEdit": {
+      "materialAttribute4": "属性材质用例4",
+      "materialAttribute5": "属性材质用例5",
+      "materialAttribute6": "属性材质用例6"
+    }
+  },
+  "classAttributeCases": {
+    "classAttribute1": "类材质用例1",
+    "classAttribute2": "类材质用例2",
+    "classAttribute3": "类材质用例3"
+  },
+  "customAttributeCases": {
+    "customAttribute1": "自定义材质用例1",
+    "customAttribute2": "自定义材质用例2",
+    "customAttribute3": "自定义材质用例3"
+  }
+}
