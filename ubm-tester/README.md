@@ -29,4 +29,4 @@
 1. 使用`pytest -s tests/smoke_test.py --path 测试模型文件夹 --html=report.html --self-contained-html --capture=sys
 `运行基本功能测试
 2. 后续测试用例添加到test_cases文件夹中，测试用例采用json文件存储，具体方式参照代码实际使用
-3. 生成的测试报告示例如下:![SampleReport](/sample.png "SampleReportImage")
+3. 生成的测试报告示例如下:![SampleReport](./sample.png "SampleReportImage")
